@@ -4,7 +4,18 @@
 ##### 1 实现内容
 通过包装 python 的内部模块`argparse`，`asyncio`和第三方库`aiohttp`，结合 python 3.5 之后的 `async`, `await`, `装饰器`等语法糖编写了一个 HTTP-API 测试工具，各 HTTP-API 以协程为单位异步并发请求。
 
-对于主要心思花在 诸如`HTTP`结合`RESTful`接口设计开发或架构相关得广泛 的角色可以考虑用这个工具测试所编写的HTTP-API接口。
+对于主要心思花在 诸如`HTTP`结合`RESTful`接口设计开发或架构相关得广泛 的角色可以考虑用这个工具测试所编写的HTTP-API接口。如和是30个相同HTTP-API的请求的运行打个照面（异步并发将节约2s时间）：
+```python
+...
+15 http://api.heclouds.com:80/ipc/video/boot_address    31.41ms
+17 http://api.heclouds.com:80/ipc/video/boot_address    46.86ms
+20 http://api.heclouds.com:80/ipc/video/boot_address    46.86ms
+
+sync  request total time:  1939.13ms
+async request total time:   203.08ms
+time saved about  1736.05ms from sync to async
+---------------------done---------------------
+```
 
 `httpApiTest`默认
 1. 默认显示各个请求及请求耗时（可关闭）；
