@@ -2,7 +2,7 @@
 ---
 
 ##### 1 实现内容
-通过包装 python 的内部模块`argparse`，`asyncio`和第三方库`aiohttp`，结合 python 3.5 之后的 `async`, `await`, `装饰器`等语法糖编写了一个 HTTP-API 测试工具。
+通过包装 python 的内部模块`argparse`，`asyncio`和第三方库`aiohttp`，结合 python 3.5 之后的 `async`, `await`, `装饰器`等语法糖编写了一个 HTTP-API 测试工具，各 HTTP-API 以协程为单位异步并发请求。
 
 对于主要心思花在 诸如`HTTP`结合`RESTful`接口设计开发或架构相关得广泛 的角色可以考虑用这个工具测试所编写的HTTP-API接口。
 
