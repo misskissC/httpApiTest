@@ -1,6 +1,8 @@
 introduce for httpApiTest
 ---
 
+httpApiTest is an application of async-coroutine concurrency.
+
 ### usage
 ```python
 $ python ln_comm.py -h
@@ -58,4 +60,4 @@ those arguments can be configured in CONFIGFILE statically too
 see python code, or a little reference by `doc`.
 
 ### sidelights
-this my first time to use `python` write something, so the routines not mature enough, maybe. goddess would hope more knowledgeable guys just like you can continue to improve it.
+this my first time to use `python` to write something, so the routines not mature enough, maybe. goddess would hope more knowledgeable guys just like you can continue to improve it.
